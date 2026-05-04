@@ -1,571 +1,267 @@
 {
   "version": "2.0",
-  "lastUpdated": "2026-05-04T06:20:31.473Z",
+  "lastUpdated": "2026-05-04T07:00:00.000Z",
   "activeFeatures": [
     "domain",
     "db",
     "hanja",
     "ui",
     "web",
-    "admin",
     "migration",
     "scripts"
   ],
-  "primaryFeature": "domain",
+  "primaryFeature": "web",
   "features": {
     "domain": {
       "phase": "do",
       "phaseNumber": 3,
       "matchRate": null,
       "iterationCount": 0,
-      "requirements": [],
+      "requirements": [
+        "branded types (PersonId, BranchId 등)",
+        "60갑자 자동 계산",
+        "항렬자 추천",
+        "촌수 라벨"
+      ],
       "documents": {},
       "timestamps": {
         "started": "2026-05-04T03:10:39.092Z",
-        "lastUpdated": "2026-05-04T04:24:44.897Z"
+        "lastUpdated": "2026-05-04T07:00:00.000Z"
       },
-      "lastFile": "/Users/kenny/Desktop/Task/Ki-site/packages/domain/src/types.ts"
+      "lastFile": "/Users/kenny/Desktop/Task/Kee-site/packages/domain/src/types.ts",
+      "status": "complete"
     },
     "db": {
       "phase": "do",
       "phaseNumber": 3,
       "matchRate": null,
       "iterationCount": 0,
-      "requirements": [],
+      "requirements": [
+        "11개 kee_* 테이블",
+        "3개 RPC (search_persons, calculate_chonsu, get_direct_lineage)",
+        "분파 6개 seed",
+        "TypeScript 타입 자동 생성"
+      ],
       "documents": {},
       "timestamps": {
         "started": "2026-05-04T03:11:45.585Z",
-        "lastUpdated": "2026-05-04T03:32:10.058Z"
+        "lastUpdated": "2026-05-04T07:00:00.000Z"
       },
-      "lastFile": "/Users/kenny/Desktop/Task/Ki-site/packages/db/src/types.generated.ts"
+      "lastFile": "/Users/kenny/Desktop/Task/Kee-site/packages/db/src/types.generated.ts",
+      "status": "complete"
     },
     "hanja": {
       "phase": "do",
       "phaseNumber": 3,
       "matchRate": null,
       "iterationCount": 0,
-      "requirements": [],
+      "requirements": [
+        "CJK 범위 판별",
+        "확장 폰트 fallback 결정",
+        "폰트 서브셋 collector"
+      ],
       "documents": {},
       "timestamps": {
         "started": "2026-05-04T03:12:25.239Z",
-        "lastUpdated": "2026-05-04T03:12:25.239Z"
+        "lastUpdated": "2026-05-04T07:00:00.000Z"
       },
-      "lastFile": "/Users/kenny/Desktop/Task/Ki-site/packages/hanja/src/index.ts"
+      "lastFile": "/Users/kenny/Desktop/Task/Kee-site/packages/hanja/src/index.ts",
+      "status": "complete"
     },
     "ui": {
       "phase": "do",
       "phaseNumber": 3,
       "matchRate": null,
       "iterationCount": 0,
-      "requirements": [],
+      "requirements": [
+        "디자인 토큰 (어르신 친화)",
+        "도메인 컴포넌트 6개",
+        "Tailwind preset"
+      ],
       "documents": {},
       "timestamps": {
         "started": "2026-05-04T03:12:48.101Z",
-        "lastUpdated": "2026-05-04T03:38:51.709Z"
+        "lastUpdated": "2026-05-04T07:00:00.000Z"
       },
-      "lastFile": "/Users/kenny/Desktop/Task/Ki-site/packages/ui/src/components/domain/TreeNode.tsx"
+      "lastFile": "/Users/kenny/Desktop/Task/Kee-site/packages/ui/src/components/domain/TreeNode.tsx",
+      "status": "complete"
     },
     "web": {
       "phase": "do",
       "phaseNumber": 3,
       "matchRate": null,
       "iterationCount": 0,
-      "requirements": [],
+      "requirements": [
+        "F01 가계도 placeholder",
+        "F02 검색 (RPC 연동 + 한자 IME)",
+        "F03 양자 출입현황 placeholder",
+        "F04 촌수 계산 placeholder",
+        "F05 신규 등록 5단계 마법사",
+        "F06 위원회 대시보드 placeholder",
+        "F07 통계 placeholder",
+        "F08 가승보 placeholder"
+      ],
       "documents": {},
       "timestamps": {
         "started": "2026-05-04T03:13:45.496Z",
-        "lastUpdated": "2026-05-04T06:20:31.473Z"
+        "lastUpdated": "2026-05-04T07:00:00.000Z"
       },
-      "lastFile": "/Users/kenny/Desktop/Task/Ki-site/apps/web/app/(public)/sudan/new/page.tsx"
-    },
-    "admin": {
-      "phase": "do",
-      "phaseNumber": 3,
-      "matchRate": null,
-      "iterationCount": 0,
-      "requirements": [],
-      "documents": {},
-      "timestamps": {
-        "started": "2026-05-04T03:14:39.038Z",
-        "lastUpdated": "2026-05-04T03:19:51.214Z"
-      },
-      "lastFile": "/Users/kenny/Desktop/Task/Ki-site/apps/admin/next.config.ts"
+      "lastFile": "/Users/kenny/Desktop/Task/Kee-site/apps/web/app/(public)/sudan/new/Wizard.tsx",
+      "status": "in_progress",
+      "note": "admin은 web의 (admin) 라우트 그룹으로 통합됨. 이전 admin feature는 deprecated."
     },
     "migration": {
-      "phase": "do",
-      "phaseNumber": 3,
+      "phase": "plan",
+      "phaseNumber": 1,
       "matchRate": null,
       "iterationCount": 0,
-      "requirements": [],
+      "requirements": [
+        "5분 진단 스크립트 (diagnose.sh)",
+        "MySQL 5.7 docker compose",
+        "마이그레이션 스크립트 골격",
+        "자료 수령 후 본격 작성 (W2~)"
+      ],
       "documents": {},
       "timestamps": {
         "started": "2026-05-04T03:16:15.205Z",
-        "lastUpdated": "2026-05-04T03:20:43.244Z"
+        "lastUpdated": "2026-05-04T07:00:00.000Z"
       },
-      "lastFile": "/Users/kenny/Desktop/Task/Ki-site/scripts/migration/diagnose.sh"
+      "lastFile": "/Users/kenny/Desktop/Task/Kee-site/scripts/migration/diagnose.sh",
+      "status": "scaffolded",
+      "note": "자료 (.sql 백업 + 사진 + 인물 5명 캡처) 수령 대기. W2 본격 진행."
     },
     "scripts": {
       "phase": "do",
       "phaseNumber": 3,
       "matchRate": null,
       "iterationCount": 0,
-      "requirements": [],
+      "requirements": [
+        "sync-env.sh (Supabase env → .env.local)"
+      ],
       "documents": {},
       "timestamps": {
         "started": "2026-05-04T03:53:28.708Z",
-        "lastUpdated": "2026-05-04T03:53:28.708Z"
+        "lastUpdated": "2026-05-04T07:00:00.000Z"
       },
-      "lastFile": "/Users/kenny/Desktop/Task/Ki-site/scripts/sync-env.sh"
+      "lastFile": "/Users/kenny/Desktop/Task/Kee-site/scripts/sync-env.sh",
+      "status": "complete"
     }
   },
   "pipeline": {
-    "currentPhase": 1,
+    "currentPhase": 3,
+    "currentPhaseName": "Mockup",
     "level": "Dynamic",
-    "phaseHistory": []
+    "phaseHistory": [
+      {
+        "phase": 1,
+        "name": "Schema",
+        "startedAt": "2026-05-04T03:00:00.000Z",
+        "completedAt": "2026-05-04T03:30:00.000Z",
+        "artifacts": ["supabase/migrations/20260504000100_core_schema.sql", "packages/domain/src/types.ts"]
+      },
+      {
+        "phase": 2,
+        "name": "Convention",
+        "startedAt": "2026-05-04T03:00:00.000Z",
+        "completedAt": "2026-05-04T03:30:00.000Z",
+        "artifacts": ["tsconfig.base.json", ".prettierrc.json", "kee_ DB prefix 결정"]
+      },
+      {
+        "phase": 3,
+        "name": "Mockup",
+        "startedAt": "2026-05-04T03:30:00.000Z",
+        "status": "in_progress",
+        "artifacts": [
+          "apps/web/app/(public)/* — 9 페이지",
+          "packages/ui/src/components/* — 6 도메인 컴포넌트",
+          "F02 검색 RPC 연동",
+          "F05 5단계 마법사"
+        ],
+        "next": "Day 2 더미 100명 + F01 D3 가계도"
+      },
+      {
+        "phase": 4,
+        "name": "API",
+        "startedAt": "2026-05-04T04:00:00.000Z",
+        "status": "partial",
+        "artifacts": [
+          "supabase/migrations/20260504000300_rpc_functions.sql — 3 RPC",
+          "supabase/migrations/20260504000200_search_trigger.sql"
+        ],
+        "note": "RPC만 작성. RLS는 W2 (Day 5/6 admin/sudan)"
+      },
+      {
+        "phase": 5,
+        "name": "Design System",
+        "startedAt": "2026-05-04T03:30:00.000Z",
+        "completedAt": "2026-05-04T04:00:00.000Z",
+        "artifacts": ["packages/ui/tailwind.preset.ts", "packages/ui/src/styles.css", "packages/ui/src/components/"]
+      },
+      {
+        "phase": 6,
+        "name": "UI Integration",
+        "startedAt": "2026-05-04T05:00:00.000Z",
+        "status": "in_progress",
+        "artifacts": [
+          "apps/web/app/(public)/search/SearchForm.tsx — RPC 연동",
+          "apps/web/app/(public)/sudan/new/Wizard.tsx — 5단계 state machine"
+        ]
+      }
+    ]
   },
   "session": {
     "startedAt": "2026-05-04T02:59:00.751Z",
-    "onboardingCompleted": false,
-    "lastActivity": "2026-05-04T06:20:31.473Z"
+    "onboardingCompleted": true,
+    "onboardingCompletedAt": "2026-05-04T04:00:00.000Z",
+    "lastActivity": "2026-05-04T07:00:00.000Z"
   },
-  "history": [
-    {
-      "timestamp": "2026-05-04T03:10:39.092Z",
-      "feature": "domain",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:10:57.737Z",
-      "feature": "domain",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:11:11.497Z",
-      "feature": "domain",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:11:30.068Z",
-      "feature": "domain",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:11:33.419Z",
-      "feature": "domain",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:11:45.585Z",
-      "feature": "db",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:11:50.303Z",
-      "feature": "db",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:11:59.861Z",
-      "feature": "db",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:12:02.780Z",
-      "feature": "db",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:12:25.239Z",
-      "feature": "hanja",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:12:48.101Z",
-      "feature": "ui",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:12:59.478Z",
-      "feature": "ui",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:13:04.708Z",
-      "feature": "ui",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:13:09.566Z",
-      "feature": "ui",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:13:15.757Z",
-      "feature": "ui",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:13:21.840Z",
-      "feature": "ui",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:13:29.133Z",
-      "feature": "ui",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:13:33.624Z",
-      "feature": "ui",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:13:45.496Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:13:55.555Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:14:02.721Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:14:20.018Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:14:39.038Z",
-      "feature": "admin",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:14:50.997Z",
-      "feature": "admin",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:14:56.296Z",
-      "feature": "admin",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:15:09.351Z",
-      "feature": "admin",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:16:15.205Z",
-      "feature": "migration",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:17:54.632Z",
-      "feature": "migration",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:18:02.475Z",
-      "feature": "migration",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:19:05.168Z",
-      "feature": "db",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:19:46.283Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:19:51.214Z",
-      "feature": "admin",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:20:43.244Z",
-      "feature": "migration",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:32:10.058Z",
-      "feature": "db",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:35:32.624Z",
-      "feature": "ui",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:35:46.948Z",
-      "feature": "ui",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:35:53.795Z",
-      "feature": "ui",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:36:15.990Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:36:28.837Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:36:38.068Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:37:10.460Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:37:15.886Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:37:31.137Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:38:21.893Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:38:27.018Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:38:44.493Z",
-      "feature": "ui",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:38:48.307Z",
-      "feature": "ui",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:38:51.709Z",
-      "feature": "ui",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:39:10.055Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T03:53:28.708Z",
-      "feature": "scripts",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T04:13:09.758Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T04:13:20.715Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T04:13:38.360Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T04:14:01.472Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T04:14:21.076Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T04:14:37.935Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T04:14:55.269Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T04:15:17.208Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T04:15:40.330Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T04:15:51.167Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T04:15:54.152Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T04:15:58.955Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T04:16:02.887Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T04:16:22.431Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T04:24:39.761Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T04:24:44.897Z",
-      "feature": "domain",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T06:11:35.664Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T06:11:42.189Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T06:11:55.942Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T06:12:39.625Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T06:18:32.172Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T06:20:25.058Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
-    },
-    {
-      "timestamp": "2026-05-04T06:20:31.473Z",
-      "feature": "web",
-      "phase": "do",
-      "action": "updated"
+  "sprint": {
+    "name": "Phase 1 W1 Mockup Sprint",
+    "duration": "7 days",
+    "currentDay": "Day 1+ (Day 2 진입 직전)",
+    "features": {
+      "F01": { "name": "가계도", "day": 2, "status": "placeholder" },
+      "F02": { "name": "인물 검색", "day": 3, "status": "rpc_connected" },
+      "F03": { "name": "양자 출입현황", "day": 4, "status": "placeholder" },
+      "F04": { "name": "촌수 계산", "day": 4, "status": "placeholder" },
+      "F05": { "name": "신규 등록", "day": 5, "status": "wizard_mockup" },
+      "F06": { "name": "위원회 대시보드", "day": 6, "status": "placeholder" },
+      "F07": { "name": "통계", "day": 5, "status": "placeholder" },
+      "F08": { "name": "가승보", "day": 6, "status": "placeholder" }
     }
-  ]
+  },
+  "openDecisions": [
+    {
+      "id": "migration_tool_cleanup",
+      "title": "마이그레이션 도구 흔적 정리",
+      "options": ["A: 그대로", "B: 변수만 일반화", "C: 완전 정리"],
+      "default": "A",
+      "blocking": false
+    },
+    {
+      "id": "day2_progression",
+      "title": "Day 2 진입 (더미 100명 + D3 가계도)",
+      "options": ["진행", "대기"],
+      "blocking": true,
+      "note": "검색·통계·가계도 모두 진짜 데이터 시연하려면 필수"
+    }
+  ],
+  "infrastructure": {
+    "docker": "Colima (4 CPU / 6 GB / 30 GB)",
+    "dockerHost": "unix://$HOME/.colima/docker.sock",
+    "supabase": {
+      "projectId": "Kee-site",
+      "studioUrl": "http://127.0.0.1:54323",
+      "apiUrl": "http://127.0.0.1:54321",
+      "dbUrl": "postgresql://postgres:postgres@127.0.0.1:54322/postgres",
+      "analyticsDisabled": true
+    },
+    "dev": {
+      "port": 4000,
+      "pidFile": "/tmp/kee-site-dev.pid",
+      "logFile": "/tmp/kee-site-dev.log"
+    },
+    "github": "https://github.com/realks2002-cell/Kee-site"
+  },
+  "history": []
 }
