@@ -1,0 +1,49 @@
+# 으뜸족보(Uttom Internet Pedigree) 분석용 로컬 MySQL 5.7
+#
+# 실행:
+#   pnpm uttom:up
+#   또는: docker compose -f docker/uttom-mysql.yml up -d
+#
+# 으뜸족보 백업 .sql import (EUC-KR이면 변환 후):
+#   iconv -f EUC-KR -t UTF-8 uttom_backup.sql > uttom_utf8.sql
+#   sed -i '' '1i\
+#   SET NAMES utf8mb4;
+#   ' uttom_utf8.sql
+#   docker exec -i hjkee-uttom-mysql mysql -uroot -plocal uttom_jokbo < uttom_utf8.sql
+#
+# 접속:
+#   docker exec -it hjkee-uttom-mysql mysql -uroot -plocal uttom_jokbo
+#   또는 외부 도구: mysql://root:local@localhost:3306/uttom_jokbo
+
+services:
+  uttom-mysql:
+    image: mysql:5.7
+    container_name: hjkee-uttom-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: local
+      MYSQL_DATABASE: uttom_jokbo
+      MYSQL_CHARACTER_SET_SERVER: utf8mb4
+      MYSQL_COLLATION_SERVER: utf8mb4_unicode_ci
+      TZ: Asia/Seoul
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+      - --skip-character-set-client-handshake
+      - --default-authentication-plugin=mysql_native_password
+      - --max-allowed-packet=512M
+      - --innodb-buffer-pool-size=512M
+    ports:
+      - '3306:3306'
+    volumes:
+      - uttom-data:/var/lib/mysql
+      - ./uttom-init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ['CMD', 'mysqladmin', 'ping', '-h', 'localhost', '-uroot', '-plocal']
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+volumes:
+  uttom-data:
+    name: hjkee-uttom-data

@@ -1,0 +1,22 @@
+{
+  "name": "@hjkee/migration",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "diagnose": "bash diagnose.sh",
+    "migrate": "tsx migrate.ts",
+    "validate": "tsx validate.ts"
+  },
+  "dependencies": {
+    "@hjkee/db": "workspace:*",
+    "@hjkee/domain": "workspace:*",
+    "@google/generative-ai": "^0.21.0",
+    "mysql2": "^3.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

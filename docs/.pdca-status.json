@@ -1,0 +1,571 @@
+{
+  "version": "2.0",
+  "lastUpdated": "2026-05-04T06:20:31.473Z",
+  "activeFeatures": [
+    "domain",
+    "db",
+    "hanja",
+    "ui",
+    "web",
+    "admin",
+    "migration",
+    "scripts"
+  ],
+  "primaryFeature": "domain",
+  "features": {
+    "domain": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-05-04T03:10:39.092Z",
+        "lastUpdated": "2026-05-04T04:24:44.897Z"
+      },
+      "lastFile": "/Users/kenny/Desktop/Task/Ki-site/packages/domain/src/types.ts"
+    },
+    "db": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-05-04T03:11:45.585Z",
+        "lastUpdated": "2026-05-04T03:32:10.058Z"
+      },
+      "lastFile": "/Users/kenny/Desktop/Task/Ki-site/packages/db/src/types.generated.ts"
+    },
+    "hanja": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-05-04T03:12:25.239Z",
+        "lastUpdated": "2026-05-04T03:12:25.239Z"
+      },
+      "lastFile": "/Users/kenny/Desktop/Task/Ki-site/packages/hanja/src/index.ts"
+    },
+    "ui": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-05-04T03:12:48.101Z",
+        "lastUpdated": "2026-05-04T03:38:51.709Z"
+      },
+      "lastFile": "/Users/kenny/Desktop/Task/Ki-site/packages/ui/src/components/domain/TreeNode.tsx"
+    },
+    "web": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-05-04T03:13:45.496Z",
+        "lastUpdated": "2026-05-04T06:20:31.473Z"
+      },
+      "lastFile": "/Users/kenny/Desktop/Task/Ki-site/apps/web/app/(public)/sudan/new/page.tsx"
+    },
+    "admin": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-05-04T03:14:39.038Z",
+        "lastUpdated": "2026-05-04T03:19:51.214Z"
+      },
+      "lastFile": "/Users/kenny/Desktop/Task/Ki-site/apps/admin/next.config.ts"
+    },
+    "migration": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-05-04T03:16:15.205Z",
+        "lastUpdated": "2026-05-04T03:20:43.244Z"
+      },
+      "lastFile": "/Users/kenny/Desktop/Task/Ki-site/scripts/migration/diagnose.sh"
+    },
+    "scripts": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-05-04T03:53:28.708Z",
+        "lastUpdated": "2026-05-04T03:53:28.708Z"
+      },
+      "lastFile": "/Users/kenny/Desktop/Task/Ki-site/scripts/sync-env.sh"
+    }
+  },
+  "pipeline": {
+    "currentPhase": 1,
+    "level": "Dynamic",
+    "phaseHistory": []
+  },
+  "session": {
+    "startedAt": "2026-05-04T02:59:00.751Z",
+    "onboardingCompleted": false,
+    "lastActivity": "2026-05-04T06:20:31.473Z"
+  },
+  "history": [
+    {
+      "timestamp": "2026-05-04T03:10:39.092Z",
+      "feature": "domain",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:10:57.737Z",
+      "feature": "domain",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:11:11.497Z",
+      "feature": "domain",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:11:30.068Z",
+      "feature": "domain",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:11:33.419Z",
+      "feature": "domain",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:11:45.585Z",
+      "feature": "db",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:11:50.303Z",
+      "feature": "db",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:11:59.861Z",
+      "feature": "db",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:12:02.780Z",
+      "feature": "db",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:12:25.239Z",
+      "feature": "hanja",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:12:48.101Z",
+      "feature": "ui",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:12:59.478Z",
+      "feature": "ui",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:13:04.708Z",
+      "feature": "ui",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:13:09.566Z",
+      "feature": "ui",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:13:15.757Z",
+      "feature": "ui",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:13:21.840Z",
+      "feature": "ui",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:13:29.133Z",
+      "feature": "ui",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:13:33.624Z",
+      "feature": "ui",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:13:45.496Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:13:55.555Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:14:02.721Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:14:20.018Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:14:39.038Z",
+      "feature": "admin",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:14:50.997Z",
+      "feature": "admin",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:14:56.296Z",
+      "feature": "admin",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:15:09.351Z",
+      "feature": "admin",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:16:15.205Z",
+      "feature": "migration",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:17:54.632Z",
+      "feature": "migration",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:18:02.475Z",
+      "feature": "migration",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:19:05.168Z",
+      "feature": "db",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:19:46.283Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:19:51.214Z",
+      "feature": "admin",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:20:43.244Z",
+      "feature": "migration",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:32:10.058Z",
+      "feature": "db",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:35:32.624Z",
+      "feature": "ui",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:35:46.948Z",
+      "feature": "ui",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:35:53.795Z",
+      "feature": "ui",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:36:15.990Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:36:28.837Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:36:38.068Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:37:10.460Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:37:15.886Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:37:31.137Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:38:21.893Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:38:27.018Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:38:44.493Z",
+      "feature": "ui",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:38:48.307Z",
+      "feature": "ui",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:38:51.709Z",
+      "feature": "ui",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:39:10.055Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T03:53:28.708Z",
+      "feature": "scripts",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T04:13:09.758Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T04:13:20.715Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T04:13:38.360Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T04:14:01.472Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T04:14:21.076Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T04:14:37.935Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T04:14:55.269Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T04:15:17.208Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T04:15:40.330Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T04:15:51.167Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T04:15:54.152Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T04:15:58.955Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T04:16:02.887Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T04:16:22.431Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T04:24:39.761Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T04:24:44.897Z",
+      "feature": "domain",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T06:11:35.664Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T06:11:42.189Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T06:11:55.942Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T06:12:39.625Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T06:18:32.172Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T06:20:25.058Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T06:20:31.473Z",
+      "feature": "web",
+      "phase": "do",
+      "action": "updated"
+    }
+  ]
+}

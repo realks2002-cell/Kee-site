@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* HSL 분리 (Tailwind 알파 채널 호환) */
+    /* 베이스 */
+    --bg: 0 0% 100%;
+    --bg-soft: 30 7% 98%;
+    --bg-card: 0 0% 100%;
+    --bg-elevated: 30 7% 95%;
+    --border: 24 6% 91%;
+    --border-strong: 24 6% 83%;
+
+    /* 텍스트 */
+    --ink: 24 9% 5%;
+    --ink-soft: 30 7% 15%;
+    --ink-mute: 30 5% 33%;
+    --ink-dim: 30 5% 47%;
+
+    /* 포인트 — 깊은 적색 (격조) */
+    --accent: 17 80% 25%;
+    --accent-soft: 21 80% 33%;
+    --accent-bg: 14 100% 97%;
+
+    /* 보조 */
+    --gold: 34 92% 33%;
+    --success: 142 70% 25%;
+    --info: 224 75% 40%;
+    --warning: 41 92% 41%;
+    --danger: 0 75% 42%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer components {
+  /* 한자 병기 인라인 표기 */
+  .hanja {
+    @apply font-serif-cjk italic text-gold;
+    font-size: 0.85em;
+    margin-left: 4px;
+  }
+}

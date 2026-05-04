@@ -1,0 +1,35 @@
+{
+  "name": "hjkee",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.33.0",
+  "engines": {
+    "node": ">=20.11.0"
+  },
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "format": "prettier --write \"**/*.{ts,tsx,md,json}\"",
+    "env:sync": "bash scripts/sync-env.sh",
+    "supa:start": "DOCKER_HOST=unix://$HOME/.colima/docker.sock supabase start",
+    "supa:stop": "DOCKER_HOST=unix://$HOME/.colima/docker.sock supabase stop",
+    "supa:status": "DOCKER_HOST=unix://$HOME/.colima/docker.sock supabase status",
+    "db:types": "DOCKER_HOST=unix://$HOME/.colima/docker.sock supabase gen types typescript --local > packages/db/src/types.generated.ts",
+    "db:reset": "DOCKER_HOST=unix://$HOME/.colima/docker.sock supabase db reset",
+    "db:push": "DOCKER_HOST=unix://$HOME/.colima/docker.sock supabase db push",
+    "uttom:up": "docker compose -f docker/uttom-mysql.yml up -d",
+    "uttom:down": "docker compose -f docker/uttom-mysql.yml down",
+    "uttom:diagnose": "bash scripts/migration/diagnose.sh"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.0",
+    "typescript": "^5.7.2",
+    "prettier": "^3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "@types/node": "^22.10.5"
+  }
+}
